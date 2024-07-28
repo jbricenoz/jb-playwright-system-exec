@@ -24,13 +24,13 @@ export const scenario = {
          test: 1,
          paramOne: 2,
          paramTwo: 2,
-         expected: 4
+         expected: 0
       },
       {
          test: 2,
-         paramOne: 2,
+         paramOne: 20,
          paramTwo: 2,
-         expected: 4
+         expected: 18
       },
       {
          test: 3,
@@ -49,14 +49,14 @@ export const scenario = {
       {
          test: 2,
          paramOne: 2,
-         paramTwo: 2,
-         expected: 4
+         paramTwo: 20,
+         expected: 40
       },
       {
          test: 3,
          paramOne: 2,
-         paramTwo: 2,
-         expected: 4
+         paramTwo: 5,
+         expected: 10
       }
    ],
    divide: [
@@ -64,19 +64,19 @@ export const scenario = {
          test: 1,
          paramOne: 2,
          paramTwo: 2,
-         expected: 4
+         expected: 1
       },
       {
          test: 2,
-         paramOne: 2,
+         paramOne: 4,
          paramTwo: 2,
-         expected: 4
+         expected: 2
       },
       {
          test: 3,
          paramOne: 2,
          paramTwo: 2,
-         expected: 4
+         expected: 0
       }
    ]
 }

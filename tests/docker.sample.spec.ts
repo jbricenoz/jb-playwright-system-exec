@@ -30,7 +30,7 @@ test.describe('Docker Calculator', {
     test(`Run scenario divide calculus method - Iteration: ${data.test}`, {
       tag: `@cmd @divide @divide${data.test}`,
     }, async ({ execute }) => {
-      expect(await execute.dockerCalculate(data.paramOne, data.paramTwo, mathMethod.ADD)).toBe(data.expected);
+      expect(await execute.dockerCalculate(data.paramOne, data.paramTwo, mathMethod.DIVIDE)).toBe(data.expected);
     });
   })
 
@@ -38,7 +38,7 @@ test.describe('Docker Calculator', {
     test(`Run scenario multiply calculus method - Iteration: ${data.test}`, {
       tag: `@cmd @multiply @multiply${data.test}`,
     }, async ({ execute }) => {
-      expect(await execute.dockerCalculate(data.paramOne, data.paramTwo, mathMethod.ADD)).toBe(data.expected);
+      expect(await execute.dockerCalculate(data.paramOne, data.paramTwo, mathMethod.MULTIPLY)).toBe(data.expected);
     });
   })
 
@@ -46,7 +46,7 @@ test.describe('Docker Calculator', {
     test(`Run scenario subtract calculus method - Iteration: ${data.test}`, {
       tag: `@cmd @subtract @subtract${data.test}`,
     }, async ({ execute }) => {
-      expect(await execute.dockerCalculate(data.paramOne, data.paramTwo, mathMethod.ADD)).toBe(data.expected);
+      expect(await execute.dockerCalculate(data.paramOne, data.paramTwo, mathMethod.SUBTRACT)).toBe(data.expected);
     });
   })
 
